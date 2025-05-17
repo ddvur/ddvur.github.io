@@ -1,0 +1,121 @@
+/* Réinitialisation des styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Style général */
+body {
+    background-color: #eef1f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* En-tête */
+header {
+    background: linear-gradient(135deg, #444, #222);
+    padding: 25px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+header p {
+	color:white;
+}
+
+/* Sections */
+section {
+    background: white;
+    padding: 25px;
+    margin: 20px auto;
+    width: 85%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Titres */
+h1{
+	color: #1c8ef0;
+}
+
+h2, h3 {
+    color: #2c3e50;
+}
+
+h2 {
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Listes */
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+
+/* Expériences et projets */
+.experience, .project {
+    background: #dfe6e9;
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 5px solid #2980b9;
+    border-radius: 5px;
+}
+
+/* Compétences */
+#competence {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.titreliste {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2980b9;
+    margin-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #2980b9;
+}
+
+.eltliste {
+    margin-left: 15px;
+    font-size: 1em;
+    font-style: italic;
+    background: #dfe6e9;
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.eltliste:hover {
+    background: #b2bec3;
+    cursor: pointer;
+}
+
+
+/* Liens */
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+    font-size: 0.9em;
+}
