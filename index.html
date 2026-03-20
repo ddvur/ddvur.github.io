@@ -3,151 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Liam Laracine</title>
-    <link rel="stylesheet" href="style/style.css">
+    <title>Liam Laracine — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Portfolio</h1>
-        <p>Liam Laracine en BUT Informatique</p>
+
+    <!-- Navigation flottante -->
+    <nav id="navbar">
+        <div class="nav-logo">LL</div>
+        <ul class="nav-links">
+            <li><a href="#presentation" data-label="01">Présentation</a></li>
+            <li><a href="#formation" data-label="02">Formation</a></li>
+            <li><a href="#experience" data-label="03">Expérience</a></li>
+            <li><a href="#competence" data-label="04">Compétences</a></li>
+            <li><a href="#contact" data-label="05">Contact</a></li>
+        </ul>
+        <div class="nav-toggle" id="navToggle">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header id="hero">
+        <div class="hero-bg">
+            <canvas id="particleCanvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <div class="hero-tag reveal-up" style="--delay:0.1s"><span class="prompt">C:\Users\Liam&gt;</span> whoami</div>
+            <h1 class="hero-title reveal-up" style="--delay:0.25s">
+                <span class="line">Liam</span>
+                <span class="line accent">Laracine</span>
+            </h1>
+            <p class="hero-sub reveal-up" style="--delay:0.4s"></p>
+            <div class="hero-cta reveal-up" style="--delay:0.55s">
+                <a href="#presentation" class="btn-primary">Explorer</a>
+                <a href="img/Liam_Laracine_CV.pdf" class="btn-outline">Voir le CV</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
     </header>
 
-    <section id="presentation">
-        <h2>Présentation</h2>
-        <p>Je m'appelle Liam Laracine, j'ai 19 ans et je suis un étudiant en deuxième année de BUT Informatique. Passionné par le développement et les nouvelles technologies, je cherche à développer mes compétences dans ces domaines afin d'en faire mon métier.</p>
-        <h2>Projet Personnel</h2>
-        <p>Création d'un jeu vidéo avec le moteur GODOT</p>
+    <!-- Présentation -->
+    <section id="presentation" class="section">
+        <div class="section-inner">
+            <div class="section-label"><span class="prompt">C:\portfolio&gt;</span> présentation</div>
+            <div class="two-col">
+                <div class="col-text">
+                    <h2 class="section-title reveal-up">Qui suis-je ?</h2>
+                    <p class="reveal-up" style="--delay:0.1s">
+                        Je m'appelle <strong>Liam Laracine</strong>, j'ai 19 ans et je suis étudiant en deuxième année de BUT Informatique. Passionné par le développement et les nouvelles technologies, je cherche à développer mes compétences dans ces domaines afin d'en faire mon métier.
+                    </p>
+                    <div class="highlight-card reveal-up" style="--delay:0.2s">
+                        <div class="highlight-icon">🎮</div>
+                        <div>
+                            <strong>Projet Personnel</strong>
+                            <p>Création d'un jeu vidéo avec le moteur GODOT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-visual reveal-up" style="--delay:0.15s">
+                    <div class="avatar-block">
+                        <div class="avatar-ring"></div>
+                        <div class="avatar-inner">LL</div>
+                        <div class="avatar-badge">19 ans</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="formation">
-        <h2>Formation</h2>
-        <p>Actuellement en BUT Informatique, j'acquiers des compétences en programmation, bases de données et gestion de projets.</p>
+    <!-- Formation -->
+    <section id="formation" class="section section-dark">
+        <div class="section-inner">
+            <div class="section-label"><span class="prompt">C:\portfolio&gt;</span> formation</div>
+            <h2 class="section-title reveal-up">Formation</h2>
+            <div class="timeline reveal-up" style="--delay:0.1s">
+                <div class="timeline-item active">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 → Aujourd'hui</span>
+                        <h3>BUT Informatique</h3>
+                        <p>Acquisition de compétences en programmation, bases de données et gestion de projets.</p>
+                        <div class="timeline-tags">
+                            <span>Programmation</span>
+                            <span>BDD</span>
+                            <span>Gestion de projet</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="experience">
-        <h2>Expérience / Projets</h2>
-        <ul>
-            <li>
-                <h2>Expériences :</h2>
-                <ul>
-                    <li>
-                        <div class="experience">
-                            <h3>Code Game Jam 2026</h3>
-                            <p>Participation à une game jam de 30 heures pour créer un jeu vidéo en équipe selon un thème imposé. Développement des compétences en travail d'équipe, gestion du temps et conception de jeu. Pour plus d'information : <a href="https://cgj.bpaul.fr/">Site de la Code Game Jam</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="experience">
-                            <h3>Concours Passe ton Hack d'abord</h3>
-                            <p>Le concours Passe ton Hack d'abord est un concours organisé par le ministère des armées. Il prend la forme d'un capture the flag autour de la cybersécurité. Pour plus d'information : <a href="https://www.education.gouv.fr/passe-ton-hack-d-abord-le-plus-grand-challenge-cyber-de-france-va-plonger-les-lyceennes-et-lyceens-416207">Site du gouvernement</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="experience">
-                            <h3>Battle-Python inter-lycée</h3>
-                            <p>La Battle-Python est un concours de codage en équipe de 3 dans lequel il faut trouver un code grâce à des programmes à créer.</p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="experience">
-                            <h3>Nuit du Code</h3>
-                            <p>La Nuit du Code est une compétition de codage qui dure 6 heures dont le but est de coder un petit jeu en python. Pour plus d'information : <a href="https://www.nuitducode.net/">Site de la Nuit du Code</a></p>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <h2>Projets :</h2>
-                <ul>
-                    <li>
-                        <div class="project">
-                            <h3>Création d'un site façade d'une entreprise de divertissement factice</h3>
-                            <p>Le site présente un site d'une agence de divertissement pour sénior. Pour voir le rendu, vous pouvez le télécharger ici: <a href="https://github.com/ddvur/PersoProject/tree/main/PROJET%20HTML">github</a></p>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="project">
-                            <h3>Création d'un jeu mini RPG en Python avec le module tkinter</h3>
-                            <p>Le jeu reprend l'esthétique de la franchise Zelda. C'est un "RPG" dans l'idée de la collecte d'objet pour avancer dans la quête. Pour le tester, vous pouvez le télécharger ici: <a href="https://github.com/ddvur/PersoProject/tree/main/projet_python_zelda">github</a></p>
-                        </div>
-                    </li>
-                </ul>
-            </li>
-        </ul>
+    <!-- Expérience & Projets -->
+    <section id="experience" class="section">
+        <div class="section-inner">
+            <div class="section-label"><span class="prompt">C:\portfolio&gt;</span> experience --list</div>
+            <h2 class="section-title reveal-up">Ce que j'ai accompli</h2>
+
+            <div class="exp-group reveal-up" style="--delay:0.1s">
+                <h3 class="group-title">🏆 Expériences</h3>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-number">01</div>
+                        <h4>Code Game Jam 2026</h4>
+                        <p>Participation à une game jam de 30 heures pour créer un jeu vidéo en équipe selon un thème imposé. Développement des compétences en travail d'équipe, gestion du temps et conception de jeu.</p>
+                        <a href="https://cgj.bpaul.fr/" class="card-link" target="_blank">↗ Site de la Code Game Jam</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-number">02</div>
+                        <h4>Concours Passe ton Hack d'abord</h4>
+                        <p>Concours organisé par le ministère des armées sous forme d'un capture the flag autour de la cybersécurité.</p>
+                        <a href="https://www.education.gouv.fr/passe-ton-hack-d-abord-le-plus-grand-challenge-cyber-de-france-va-plonger-les-lyceennes-et-lyceens-416207" class="card-link" target="_blank">↗ Site du gouvernement</a>
+                    </div>
+                    <div class="card">
+                        <div class="card-number">03</div>
+                        <h4>Battle-Python inter-lycée</h4>
+                        <p>Concours de codage en équipe de 3 dans lequel il faut trouver un code grâce à des programmes à créer.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-number">04</div>
+                        <h4>Nuit du Code</h4>
+                        <p>Compétition de codage de 6 heures dont le but est de coder un petit jeu en Python.</p>
+                        <a href="https://www.nuitducode.net/" class="card-link" target="_blank">↗ Site de la Nuit du Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="exp-group reveal-up" style="--delay:0.2s">
+                <h3 class="group-title">💻 Projets</h3>
+                <div class="cards-grid">
+                    <div class="card card-project">
+                        <div class="card-number">01</div>
+                        <h4>Site façade — Agence de divertissement</h4>
+                        <p>Site d'une agence de divertissement pour séniors. Conception HTML/CSS d'une interface professionnelle.</p>
+                        <a href="https://github.com/ddvur/PersoProject/tree/main/PROJET%20HTML" class="card-link" target="_blank">↗ Voir sur GitHub</a>
+                    </div>
+                    <div class="card card-project">
+                        <div class="card-number">02</div>
+                        <h4>Mini RPG Zelda-like — Python/Tkinter</h4>
+                        <p>Jeu reprenant l'esthétique de la franchise Zelda, centré sur la collecte d'objets pour avancer dans la quête.</p>
+                        <a href="https://github.com/ddvur/PersoProject/tree/main/projet_python_zelda" class="card-link" target="_blank">↗ Voir sur GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="competence">
-        <h2>Compétences</h2>
-        <ul>   
-            <li class="titreliste">Compétences informatiques :
-                <ul>
-                    <li class="eltliste">HTML / CSS <img src="img/icon_html_css.png" alt="Html CSS" width="100" height="100"></li>
-                    <li class="eltliste">Python <img src="img/icon_python.png" alt="Python" width="100" height="100"></li>
-                    <li class="eltliste">Base de données SQL <img src="img/icon_sql.png" alt="SQL" height="100"></li>
-                    <li class="eltliste">C++ <img src="img/icon_c++.png" alt="C++" width="100" height="100"></li>
-                    <li class="eltliste">Java <img src="img/icon_java.png" alt="Java" width="100" height="100"></li>
-                </ul>
-            </li>
-            <li class="titreliste">Compétences générales :
-                <ul>
-                    <li class="eltliste">Mathématiques</li>
-                    <li class="eltliste">Anglais (niveau B2)</li>
-                    <li class="eltliste">Base de gestion</li>
-                </ul>
-            </li>
-        </ul> 
+    <!-- Compétences -->
+    <section id="competence" class="section section-dark">
+        <div class="section-inner">
+            <div class="section-label"><span class="prompt">C:\portfolio&gt;</span> skills --verbose</div>
+            <h2 class="section-title reveal-up">Stack & Savoir-faire</h2>
+
+            <div class="skills-block reveal-up" style="--delay:0.1s">
+                <h3 class="group-title">⚙️ Compétences informatiques</h3>
+                <div class="skills-row">
+                    <div class="skill-pill" data-level="80">
+                        <span class="skill-name">HTML / CSS</span>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct:80%"></div></div>
+                    </div>
+                    <div class="skill-pill" data-level="75">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct:75%"></div></div>
+                    </div>
+                    <div class="skill-pill" data-level="65">
+                        <span class="skill-name">SQL</span>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct:65%"></div></div>
+                    </div>
+                    <div class="skill-pill" data-level="55">
+                        <span class="skill-name">C++</span>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct:55%"></div></div>
+                    </div>
+                    <div class="skill-pill" data-level="60">
+                        <span class="skill-name">Java</span>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct:60%"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-block reveal-up" style="--delay:0.2s">
+                <h3 class="group-title">🌐 Compétences générales</h3>
+                <div class="tags-row">
+                    <span class="tag">Mathématiques</span>
+                    <span class="tag">Anglais (B2)</span>
+                    <span class="tag">Base de gestion</span>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="interets">
-        <h2>Centres d'intérêts</h2>
-        <ul>   
-            <li class="titreliste">Centres d'intérêts informatiques :
-                <ul>
-                    <li class="eltliste">Intelligence Artificielle : le fonctionnement derrière l'apprentissage</li>
-                    <li class="eltliste">Programmation : plein de petits codes pour simplifier des tâches quotidiennes</li>
-                    <li class="eltliste">Jeux vidéos : principalement des rogues lite/like ou des simulations</li>
-                </ul>
-            </li>
-            <li class="titreliste">Centres d'intérêts généraux :
-                <ul>
-                    <li class="eltliste">Fractales : pour sa capacité à montrer l'infini</li>
-                    <li class="eltliste">Casse-têtes : principalement les rubik's cubes</li>
-                    <li class="eltliste">Lecture : plus particulièrement des mangas ou des romans de fantasy</li>
-                </ul>
-            </li>
-        </ul>
+    <!-- Centres d'intérêts -->
+    <section id="interets" class="section">
+        <div class="section-inner">
+            <div class="section-label"><span class="prompt">C:\portfolio&gt;</span> interests.exe</div>
+            <h2 class="section-title reveal-up">Centres d'intérêts</h2>
+            <div class="interests-grid reveal-up" style="--delay:0.1s">
+                <div class="interest-card">
+                    <div class="interest-icon">🤖</div>
+                    <h4>Intelligence Artificielle</h4>
+                    <p>Le fonctionnement derrière l'apprentissage automatique</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">⌨️</div>
+                    <h4>Programmation</h4>
+                    <p>Petits codes pour simplifier des tâches quotidiennes</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">🎮</div>
+                    <h4>Jeux vidéo</h4>
+                    <p>Principalement des roguelite/like ou des simulations</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">∞</div>
+                    <h4>Fractales</h4>
+                    <p>Pour leur capacité à montrer l'infini</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">🧩</div>
+                    <h4>Casse-têtes</h4>
+                    <p>Principalement les Rubik's cubes</p>
+                </div>
+                <div class="interest-card">
+                    <div class="interest-icon">📚</div>
+                    <h4>Lecture</h4>
+                    <p>Mangas et romans de fantasy</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="ambition">
-        <h2>Ambitions</h2>
-        <ul>
-            <li class="titreliste">Court terme :
-                <ul>
-                    <li class="eltliste">Trouver une alternance en informatique</li>
-                </ul>
-            </li>
-            <li class="titreliste">Long terme:
-                <ul>
-                    <li class="eltliste">Devenir développeur d’applications/logiciels</li>
-                </ul>
-            </li>
-        </ul>
+    <!-- Ambitions -->
+    <section id="ambition" class="section section-dark">
+        <div class="section-inner">
+            <div class="section-label"><span class="prompt">C:\portfolio&gt;</span> goals --output=all</div>
+            <h2 class="section-title reveal-up">Objectifs</h2>
+            <div class="ambition-row reveal-up" style="--delay:0.1s">
+                <div class="ambition-card">
+                    <div class="ambition-horizon">Court terme</div>
+                    <div class="ambition-icon">🔍</div>
+                    <p>Trouver une <strong>alternance en informatique</strong></p>
+                </div>
+                <div class="ambition-arrow">→</div>
+                <div class="ambition-card ambition-card--main">
+                    <div class="ambition-horizon">Long terme</div>
+                    <div class="ambition-icon">🚀</div>
+                    <p>Devenir <strong>développeur d'applications / logiciels</strong></p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email : laracine.liam@gmail.com</p>
-        <a href="https://www.linkedin.com/in/liam-laracine-ab6a03330/">
-            <p>LinkedIn : Liam Laracine</p>
-        </a>
-        <a href="https://github.com/ddvur">
-            <p>GitHub : ddvur</p>
-        </a>
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="section-inner">
+            <div class="section-label"><span class="prompt">C:\portfolio&gt;</span> contact --ping</div>
+            <h2 class="section-title reveal-up">Me contacter</h2>
+            <div class="contact-row reveal-up" style="--delay:0.1s">
+                <a href="mailto:laracine.liam@gmail.com" class="contact-card">
+                    <div class="contact-icon">✉</div>
+                    <div>
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">laracine.liam@gmail.com</span>
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/liam-laracine-ab6a03330/" class="contact-card" target="_blank">
+                    <div class="contact-icon">in</div>
+                    <div>
+                        <span class="contact-label">LinkedIn</span>
+                        <span class="contact-value">Liam Laracine</span>
+                    </div>
+                </a>
+                <a href="https://github.com/ddvur" class="contact-card" target="_blank">
+                    <div class="contact-icon">⌥</div>
+                    <div>
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">ddvur</span>
+                    </div>
+                </a>
+            </div>
+        </div>
     </section>
 
     <footer>
-        <p>© 2025 - Mon Portfolio</p>
-        <a href="img/Liam_Laracine_CV.pdf"><p>Regarder le CV</p></a>
+        <div class="footer-inner">
+            <span>© 2025 — Liam Laracine</span>
+            <a href="img/Liam_Laracine_CV.pdf" class="footer-cv">Télécharger le CV ↓</a>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
