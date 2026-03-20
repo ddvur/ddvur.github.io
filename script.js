@@ -87,7 +87,7 @@ animateParticles();
 // ---- Terminal typing ----
 const heroSub = document.querySelector('.hero-sub');
 const phrases = [
-    'Développeur passionné · Game Dev · Cybersécurité',
+    'Développeur passionné · Game Dev,
     'BUT Informatique · 2ème année',
     "En recherche d'alternance en informatique",
     'Python · C++ · Java · SQL · HTML/CSS'
